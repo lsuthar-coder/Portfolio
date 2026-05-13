@@ -104,7 +104,7 @@ Best,
               <a href={mailtoLink} className="ld-btn ld-btn-primary" data-cursor="hover">
                 <Send size={16} /> Send a mail
               </a>
-              <a href="./public/Leeladhar_Suthar_Resume.docx" download className="ld-btn ld-btn-ghost" data-cursor="hover">
+              <a href="./Leeladhar_Suthar_Resume.docx" download className="ld-btn ld-btn-ghost" data-cursor="hover">
                 <Download size={16} /> Download resume
               </a>
               <a href="https://linkedin.com/in/leeladhar-suthar" target="_blank" rel="noreferrer" className="ld-btn ld-btn-ghost" data-cursor="hover">
