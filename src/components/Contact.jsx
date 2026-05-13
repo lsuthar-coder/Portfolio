@@ -103,7 +103,7 @@ Best,
               <a href={mailtoLink} className="ld-btn ld-btn-primary" data-cursor="hover">
                 <Send size={16} /> Send a mail
               </a>
-              <a href="#" download className="ld-btn ld-btn-ghost" data-cursor="hover">
+              <a href="https://docs.google.com/document/d/1cRncqRMB1cQSWeqwKgvodph_ifiPSe8d/export?format=pdf" download className="ld-btn ld-btn-ghost" data-cursor="hover">
                 <Download size={16} /> Download resume
               </a>
               <a href="https://linkedin.com/in/leeladhar-suthar" target="_blank" rel="noreferrer" className="ld-btn ld-btn-ghost" data-cursor="hover">
