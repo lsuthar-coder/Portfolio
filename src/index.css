@@ -1,0 +1,225 @@
+/* index.css */
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* NotFound.css or index.css */
+
+.notfound-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.4s ease;
+}
+
+/* DARK */
+
+.dark-theme {
+  background: radial-gradient(circle at top, #1e1b4b, #020617);
+  color: white;
+}
+
+/* LIGHT */
+
+.light-theme {
+  background: radial-gradient(circle at top, #dbeafe, #ffffff);
+  color: #0f172a;
+}
+
+.gradient-bg {
+  position: absolute;
+  inset: 0;
+  filter: blur(80px);
+}
+
+.dark-theme .gradient-bg {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(168,85,247,0.25), transparent 25%),
+    radial-gradient(circle at 80% 70%, rgba(59,130,246,0.25), transparent 25%);
+}
+
+.light-theme .gradient-bg {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(59,130,246,0.18), transparent 25%),
+    radial-gradient(circle at 80% 70%, rgba(168,85,247,0.18), transparent 25%);
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 2rem;
+}
+
+.content h1 {
+  font-size: clamp(8rem, 20vw, 14rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -10px;
+}
+
+.dark-theme .content h1 {
+  background: linear-gradient(to right, #ffffff, #a855f7, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.light-theme .content h1 {
+  background: linear-gradient(to right, #0f172a, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.dark-theme .content p {
+  color: #cbd5e1;
+}
+
+.light-theme .content p {
+  color: #475569;
+}
+
+.actions {
+  margin-top: 2rem;
+
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.home-btn,
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.9rem 1.4rem;
+  border-radius: 999px;
+
+  font-weight: 600;
+  transition: 0.3s ease;
+
+  backdrop-filter: blur(10px);
+}
+
+.dark-theme .home-btn {
+  background: linear-gradient(to right, #7c3aed, #3b82f6);
+  color: white;
+}
+
+.light-theme .home-btn {
+  background: linear-gradient(to right, #2563eb, #7c3aed);
+  color: white;
+}
+
+.home-btn:hover,
+.back-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+}
+
+.dark-theme .back-btn {
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.05);
+  color: white;
+}
+
+.light-theme .back-btn {
+  border: 1px solid rgba(15,23,42,0.1);
+  background: rgba(255,255,255,0.5);
+  color: #0f172a;
+}
+
+.floating-orb {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(10px);
+}
+
+.dark-theme .orb-1 {
+  background: rgba(168,85,247,0.35);
+}
+
+.dark-theme .orb-2 {
+  background: rgba(59,130,246,0.35);
+}
+
+.light-theme .orb-1 {
+  background: rgba(59,130,246,0.25);
+}
+
+.light-theme .orb-2 {
+  background: rgba(168,85,247,0.25);
+}
+
+.orb-1 {
+  width: 220px;
+  height: 220px;
+  top: -80px;
+  left: -120px;
+}
+
+.orb-2 {
+  width: 180px;
+  height: 180px;
+  bottom: -60px;
+  right: -100px;
+}

@@ -1,0 +1,1 @@
+export const ROLES = ['DevOps Engineer', 'Full-Stack Developer', 'Cloud Builder', 'Platform Engineer'];

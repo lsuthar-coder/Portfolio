@@ -1,0 +1,35 @@
+export const PROJECTS = [
+  {
+    n: '01',
+    title: 'API Gateway',
+    role: 'Multi-cloud platform · Entry point',
+    desc: 'The front door for every service on my multi-cloud platform. Handles JWT authentication, per-route rate limiting, circuit breaking, and request fan-out to downstream services. Deployed on K3s, observed via OpenTelemetry traces flowing into Grafana Cloud.',
+    stack: ['Node.js', 'Express', 'JWT', 'Redis', 'Docker', 'Kubernetes', 'OpenTelemetry'],
+    repo: '#',
+  },
+  {
+    n: '02',
+    title: 'Feature Flag Service',
+    role: 'Microservice · Live deployment',
+    desc: 'A standalone feature-flag microservice with weighted variant routing, per-user overrides, and Redis-backed caching. Containerized, deployed via Helm, and exposed through the api-gateway with full observability. Currently running in production on the platform.',
+    stack: ['Node.js', 'Express', 'Redis', 'Docker', 'Helm', 'Kubernetes'],
+    repo: '#',
+    demo: '#',
+  },
+  {
+    n: '03',
+    title: 'Auth Service',
+    role: 'Multi-cloud platform · Identity',
+    desc: 'JWT-based authentication and authorization microservice. Issues short-lived access tokens, handles refresh flows, and integrates with the api-gateway via shared signing keys. The trust anchor for everything else on the platform.',
+    stack: ['Node.js', 'Express', 'JWT', 'PostgreSQL', 'Docker', 'Kubernetes'],
+    repo: '#',
+  },
+  {
+    n: '04',
+    title: 'This Portfolio',
+    role: 'Personal site · React',
+    desc: 'The site you\'re reading. Single-page React build with custom SVG tech logos, hover-revealed skill definitions, scroll-driven section reveals, a custom cursor on desktop, and a full dark/light theme system — all without a heavy animation library.',
+    stack: ['React', 'CSS Variables', 'IntersectionObserver', 'SVG'],
+    repo: '#',
+  },
+];
