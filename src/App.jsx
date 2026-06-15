@@ -1,10 +1,9 @@
 // App.jsx
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useState } from "react";
 
 import Portfolio from "./pages/Portfolio";
-import NotFound from "./pages/NotFound";
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -22,10 +21,7 @@ function App() {
           }
         />
 
-        <Route
-          path="*"
-          element={<NotFound theme={theme} />}
-        />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   );

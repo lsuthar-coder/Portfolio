@@ -41,22 +41,23 @@ export const Hero = () => (
           <div className="ld-mono" style={{ fontSize: 11, color: 'var(--muted)', letterSpacing: '0.15em', marginBottom: 18 }}>// CURRENT STATE</div>
           <div className="grid grid-cols-2 gap-5">
             <div>
-              <div className="ld-mono" style={{ fontSize: 10, color: 'var(--muted)', marginBottom: 5 }}>ROLE</div>
+              <div className="ld-mono" style={{ fontSize: 10, color: 'var(--muted)', marginBottom: 5 }}>LAST ROLE</div>
               <div style={{ fontSize: 14, color: 'var(--text)' }}>Associate DevOps Engineer</div>
               <div className="ld-mono" style={{ fontSize: 11, color: 'var(--accent)', marginTop: 2 }}>@ GoTo Technologies</div>
             </div>
             <div>
               <div className="ld-mono" style={{ fontSize: 10, color: 'var(--muted)', marginBottom: 5 }}>EXPERIENCE</div>
-              <div style={{ fontSize: 14, color: 'var(--text)' }}>~1.3 years</div>
-              <div className="ld-mono" style={{ fontSize: 11, color: 'var(--accent)', marginTop: 2 }}>+ 4 yrs building</div>
+              <div style={{ fontSize: 14, color: 'var(--text)' }}>1.5 years</div>
+              <div className="ld-mono" style={{ fontSize: 11, color: 'var(--accent)', marginTop: 2 }}>professional + projects</div>
             </div>
             <div>
               <div className="ld-mono" style={{ fontSize: 10, color: 'var(--muted)', marginBottom: 5 }}>FOCUS</div>
               <div style={{ fontSize: 14, color: 'var(--text)' }}>K8s · Terraform · Multi-Cloud</div>
             </div>
             <div>
-              <div className="ld-mono" style={{ fontSize: 10, color: 'var(--muted)', marginBottom: 5 }}>OPEN TO</div>
-              <div style={{ fontSize: 14, color: 'var(--text)' }}>SDE · DevOps · Full-Stack</div>
+              <div className="ld-mono" style={{ fontSize: 10, color: 'var(--muted)', marginBottom: 5 }}>STATUS</div>
+              <div style={{ fontSize: 14, color: 'var(--text)' }}>Open to opportunities</div>
+              <div className="ld-mono" style={{ fontSize: 11, color: 'var(--accent)', marginTop: 2 }}>SDE · DevOps · Full-Stack</div>
             </div>
           </div>
         </div>
