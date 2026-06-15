@@ -1,109 +1,119 @@
 # Leeladhar Suthar — Portfolio
 
-Modern developer portfolio built with React, Vite, and custom UI interactions.
+Modern developer portfolio built with React, Vite, and Tailwind CSS. Features custom animations, dark/light theme, and interactive UI components.
 
-Live portfolio showcasing projects, backend engineering experience, animations, responsive layouts, and interactive components.
+**Live:** https://portfolio.lsuthar.in
 
 ---
 
 ## Tech Stack
 
-- React
+- React 18
 - Vite
-- JavaScript
-- Tailwind CSS
+- Tailwind CSS v4
+- Framer Motion
 - Lucide React
 - React Icons
-- Custom CSS animations
+- Instrument Serif + Geist fonts
 - GitHub Actions
-- Nginx
-- Oracle Cloud Infrastructure (OCI)
+- Azure Static Web Apps
 
 ---
 
 ## Features
 
-- Fully responsive layout
-- Dark / light theme toggle
-- Custom animated cursor
-- Scroll reveal animations
-- Interactive skill cards
-- Mobile-first navigation
-- Smooth scrolling
-- Animated project sections
-- Automated CI/CD deployment
-- Hosted on OCI compute instance
+- Dark / light theme toggle with CSS custom properties
+- Custom animated cursor with lag effect
+- Scroll reveal + stagger animations
+- Interactive skill cards (hover to flip)
+- Mobile-first navigation with fullscreen menu
+- Animated hero with typewriter effect
+- Project showcase with hover interactions
+- Experience timeline
+- Contact section
+- Automated CI/CD via GitHub Actions → Azure Static Web Apps
 
 ---
 
 ## Project Structure
 
-```text
+```
 src/
 ├── components/
-├── hooks/
+│   ├── About.jsx
+│   ├── Contact.jsx
+│   ├── CustomCursor.jsx
+│   ├── Experience.jsx
+│   ├── Footer.jsx
+│   ├── Hero.jsx
+│   ├── Nav.jsx
+│   ├── Projects.jsx
+│   ├── Skills.jsx
+│   ├── Stripe.jsx
+│   ├── ThemeToggle.jsx
+│   └── Typewriter.jsx
 ├── data/
+│   ├── constant.js
+│   ├── education.js
+│   ├── experience.js
+│   ├── nav.js
+│   ├── projects.js
+│   └── skills.js
+├── hooks/
+│   ├── MedaiaQueryHook.jsx
+│   ├── RevealHook.jsx
+│   └── ScrollSpyHook.jsx
 ├── logos/
+│   └── index.jsx
+├── pages/
+│   └── Portfolio.jsx
 ├── styles/
-└── App.jsx
+│   └── global.css
+├── App.jsx
+├── index.css
+└── main.jsx
 ```
 
 ---
 
 ## Local Development
 
-Clone repository:
-
 ```bash
-git clone <repo-url>
-cd <repo-name>
-```
-
-Install dependencies:
-
-```bash
+git clone https://github.com/lsuthar-coder/Portfolio.git
+cd Portfolio
 npm install
-```
-
-Start development server:
-
-```bash
 npm run dev
+# → http://localhost:5173
 ```
 
-Build production bundle:
-
 ```bash
-npm run build
-```
-
-Preview production build:
-
-```bash
-npm run preview
+npm run build    # production build → dist/
+npm run preview  # preview production build
 ```
 
 ---
 
 ## Deployment
 
-Application is deployed using:
+Deployed on **Azure Static Web Apps** (free tier) via GitHub Actions.
 
-- GitHub Actions
-- OCI Compute Instance
-- Nginx
+Every push to `main` automatically:
+1. Runs `npm ci`
+2. Runs `vite build`
+3. Deploys `dist/` to Azure Static Web Apps
 
-Every push to `main` automatically triggers deployment.
+Custom domain `portfolio.lsuthar.in` configured via Cloudflare DNS.
 
 ---
 
 ## Contact
 
-- GitHub: https://github.com/lsuthar-coder
-- LinkedIn: https://linkedin.com/in/leeladhar-suthar
+- **GitHub:** https://github.com/lsuthar-coder
+- **LinkedIn:** https://linkedin.com/in/leeladhar-suthar
+- **Portfolio:** https://portfolio.lsuthar.in
 
 ---
 
 ## License
 
-This project is open-source and available under the MIT License.
+MIT
