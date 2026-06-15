@@ -14,7 +14,7 @@ export default function Portfolio({theme, setTheme}) {
     <>
 
         <div className={`leeladhar-portfolio theme-${theme}`}>
-        {/* <CustomCursor /> */}
+        <CustomCursor />
         <Nav theme={theme} setTheme={setTheme} /> 
         <Hero />
         <About />
